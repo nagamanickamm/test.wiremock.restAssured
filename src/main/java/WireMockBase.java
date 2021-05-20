@@ -26,6 +26,9 @@ public class WireMockBase {
     public String getRegisterPath(){
        return wireMockServer.baseUrl()+"/register";
     }
+    public String getBaseURL(){
+        return wireMockServer.baseUrl();
+    }
 
     public void stopService(){
         wireMockServer.stop();
